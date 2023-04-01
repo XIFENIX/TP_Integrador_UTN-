@@ -1,106 +1,194 @@
-body {
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+  }
+  
+  *,
+  *::before,
+  *::after {
+	box-sizing: inherit;
+  }
+  
+  body {
 	margin: 0;
 	padding: 0;
 	font-family: Arial, sans-serif;
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 	color: #333333;
-}
-
-header {
+  }
+  
+   header {
 	background-color: #333333;
-	color: #FFFFFF;
+	color: #ffffff;
 	padding: 20px;
 	text-align: center;
-}
-
-h1 {
+  }
+  
+  h1 {
 	font-size: 48px;
 	margin-bottom: 20px;
-}
-
-nav {
+  }
+  
+  nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: #f5f5f5;
-}
+  }
   
-ul {
+  ul {
 	display: flex;
 	list-style: none;
 	margin: 8px;
-	padding: 0px;
-}
+	padding: 0;
+  }
   
-li {
+  li {
 	margin: 0 45px;
-}
+  }
   
-a {
+  a {
 	text-decoration: none;
 	color: #333;
 	font-weight: bold;
-}
+  }
   
-a:hover {
+  a:hover {
 	color: #007bff;
-}
-
-main {
+  }
+  
+  /* Main styles */
+  main {
 	max-width: 960px;
 	margin: 0 auto;
 	padding: 20px;
 	text-align: center;
-}
-
-p {
+  }
+  
+  p {
 	font-size: 24px;
 	line-height: 1.5;
 	margin-bottom: 20px;
-}
-
-#product-highlights 
- .section-title{
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 28px;
-}
-.product-container {
+  }
+  
+  #product-description {
+	margin-bottom: 50px;
+  }
+  
+  .button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #585b5e;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 15px;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+	background-color: #007bff;
+  }
+  
+  #product-highlights {
 	display: flex;
-}
-
-.product {
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  
+  .section-title {
+	font-size: 28px;
+	margin-bottom: 30px;
+  }
+  
+  .product-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+  }
+  
+  .product {
 	flex-basis: calc(33.33% - 20px);
-	margin-bottom: 20px;
-	background-color: #F5F5F5;
-	padding: 50px;
-	width: 530px;
-	box-shadow: 20px 10px 8px rgba(0, 0, 0, 0.1);
+	margin-bottom: 30px;
+	background-color: #f5f5f5;
+	padding: 20px 15px;
 	border-radius: 25px;
-	transition: box-shadow 0.3s ease-in-out;
-}
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .product:hover {
+	transform: translateY(-10px);
+	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product img {
+	max-width: 100%;
+	margin-bottom: 20px;
+  }
+  
+  .product h4 {
+	margin-bottom: 10px;
+  }
+  
+  .product p {
+	margin-bottom: 20px;
+  }
+  
+  .button-1 {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #585b5e;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 15px;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .button-1:hover {
+	background-color: #007bff;
+  }
 
-.product img {
-  max-width: 100%;
-  margin-bottom: 20px;
-}
-
-.product h4 {
-  margin-bottom: 10px;
-}
-
-.product p {
-  margin-bottom: 20px;
-}
-
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #585b5e;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 15px;
-} 
-
-
-
+  .item {
+	position: relative; /* Agregamos esta propiedad para hacer que los botones se posicionen correctamente */
+	display: inline-block;
+	margin: 20px;
+	padding: 10px;
+	border: 1px solid black;
+	width: 200px;
+	height: 300px;
+  }
+  
+  .item img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+  }
+  
+  .item h3 {
+	margin-top: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+  }
+  
+  .item p {
+	margin-top: 10px;
+	font-size: 14px;
+	text-align: center;
+  }
+  
+  .item button {
+	position: absolute; /* Agregamos esta propiedad para posicionar el botón correctamente */
+	bottom: 0; /* Ajustamos la posición del botón para que se alinee con el borde inferior del contenedor */
+	left: 50%; /* Ajustamos la posición del botón para que esté en el centro del contenedor */
+	transform: translateX(-50%); /* Ajustamos la posición del botón para que esté en el centro del contenedor */
+	padding: 10px;
+	background-color: #4CAF50;
+	color: white;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+  }
+  
