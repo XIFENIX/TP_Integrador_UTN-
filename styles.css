@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=DynaPuff&display=swap');
 html {
 	box-sizing: border-box;
 	font-size: 16px;
@@ -31,9 +32,23 @@ html {
   }
   
   h1 {
+	margin: 5px;
+	font-family: 'Alkatra', cursive;
 	font-size: 48px;
-	margin-bottom: 20px;
-	color: black;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 10px #000000;
+	background-color: transparent;
+	letter-spacing: 3px
+  }
+
+  h2 {
+    margin: 10px 20px;
+    font-size: 25px;
+    color: #ffffff;
+    text-shadow: 0px 5px 5px #000000;
+    background-color: transparent;
+    letter-spacing: 2px;
+	
   }
   
   nav {
@@ -64,12 +79,15 @@ html {
 	color: #007bff;
   }
   
-  /* Main styles */
   main {
 	max-width: 960px;
 	margin: 0 auto;
 	padding: 20px;
 	text-align: center;
+  }
+
+  h3{
+	font-size: 25px;
   }
   
   p {
@@ -80,6 +98,10 @@ html {
   
   #product-description {
 	margin-bottom: 50px;
+  }
+
+  h4 {
+	font-size: 30px;
   }
   
   .button {
@@ -113,7 +135,10 @@ html {
 	justify-content: center;
 	gap: 30px;
   }
-  
+
+  h5 {
+	font-size: 20px;
+  }
   .product {
 	flex-basis: calc(33.33% - 20px);
 	margin-bottom: 30px;
@@ -186,10 +211,10 @@ html {
   }
   
   .item button {
-	position: absolute; /* Agregamos esta propiedad para posicionar el botón correctamente */
-	bottom: 0; /* Ajustamos la posición del botón para que se alinee con el borde inferior del contenedor */
-	left: 50%; /* Ajustamos la posición del botón para que esté en el centro del contenedor */
-	transform: translateX(-50%); /* Ajustamos la posición del botón para que esté en el centro del contenedor */
+	position: absolute; 
+	bottom: 0; 
+	left: 50%;
+	transform: translateX(-50%);
 	padding: 10px;
 	background-color: #4CAF50;
 	color: white;
