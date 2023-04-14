@@ -1,0 +1,20 @@
+.services {
+    font-size: 28px;
+	margin-bottom: 80px;
+}
+
+
+.service-item img {
+	max-width: 25%;
+	margin-bottom: 0px;
+}
+
+.service-item-1 img {
+	max-width: 25%;
+	margin-bottom: 0px;
+}
+
+.service-item-2 img {
+	max-width: 35%;
+	margin-bottom: 0px;
+}
