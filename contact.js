@@ -1,20 +1,15 @@
-const form = document.querySelector("#contact-form");
-
-const nameField = document.querySelector("#name");
-const emailField = document.querySelector("#email");
-const messageField = document.querySelector("#message");
+const form = document.getElementById("contact-form");
 
 form.addEventListener("submit", (event) => {
-    event.preventDefault(); 
+  event.preventDefault();
 
-    const nameValue = nameField.value;
-    const emailValue = emailField.value;
-    const messageValue = messageField.value;
-    console.log(nameValue);
-    console.log(emailValue);
-    console.log(messageValue);
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
 
-    nameField.value = "";
-    emailField.value = "";
-    messageField.value = "";
+  if (name && email && message) {
+    form.submit();
+  } else {
+    alert("Por favor, rellena todos los campos del formulario");
+  }
 });
